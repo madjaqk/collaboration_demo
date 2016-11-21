@@ -4,5 +4,6 @@ from django.shortcuts import render
 def index(request):
 	context = {
 		"message": "I like collaborating, with collaborators!",
+		"name": "Jack",
 	}
 	return render(request, "collab/index.html", context)
